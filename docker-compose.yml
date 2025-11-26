@@ -1,0 +1,14 @@
+services:
+  spam_detector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spam_detector
+    ports:
+      - "8888:8888"   # Jupyter Notebook
+      - "8501:8501"   # Streamlit (optional)
+    volumes:
+      - .:/app
+    environment:
+      - PYSPARK_PYTHON=python
+      - PYSPARK_DRIVER_PYTHON=python

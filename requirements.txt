@@ -1,0 +1,9 @@
+pyspark==3.5.1
+nltk
+wordcloud
+matplotlib
+pandas
+numpy
+jupyter
+jupyterlab
+streamlit
