@@ -49,5 +49,5 @@ CMD bash -c "\
     jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token='' \
         --ServerApp.password='' \
         --ServerApp.disable_check_xsrf=True & \
-    streamlit run app/streamlit_app.py --server.port=8501 --server.address=0.0.0.0 --server.enableCORS=false \
+    streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0 --server.enableCORS=false \
 "
